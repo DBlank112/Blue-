@@ -7,7 +7,9 @@
     <li>Noodles</li>
     <li>Burgers</li>
 </ul>
+<h1 id="green">I like green
 
+</h1>
 <style>
     h1 {
         color: #cf0404;
@@ -15,5 +17,18 @@
     ul {
         list-style-type: lower-alpha;
     }
-
+#green{color:green;}
 </style>
+<script>
+    console.log("hello")
+    document.addEventListener("click", () => { 
+        console.log("click")
+    })
+    document.getElementById("green").addEventListener("click", () => { 
+        console.log("clickgreen")
+        setInterval(() => {
+            console.log(new Date())
+        }, 1000);
+    })
+  
+</script>
